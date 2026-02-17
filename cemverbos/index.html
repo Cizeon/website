@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cem Verbos - Learn Portuguese Conjugations</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #1d1d1f;
+            background: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-top: 12px;
+            opacity: 0.9;
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 26px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .badge-row {
+            margin-top: 28px;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .badge-row a img {
+            height: 50px;
+        }
+
+        section {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1d1d1f;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 28px 20px;
+            border-radius: 16px;
+            background: #f5f5f7;
+        }
+
+        .feature .icon {
+            font-size: 2.5rem;
+            margin-bottom: 12px;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            font-size: 0.95rem;
+            color: #6e6e73;
+        }
+
+        .screenshots {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 10px 0 20px;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshots img {
+            height: 500px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            scroll-snap-align: center;
+            flex-shrink: 0;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .about p {
+            font-size: 1.05rem;
+            color: #6e6e73;
+            margin-bottom: 16px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f5f5f7;
+            color: #6e6e73;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer .links {
+            margin-bottom: 12px;
+        }
+
+        footer .links a {
+            margin: 0 12px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 60px 16px 40px;
+            }
+
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1.05rem;
+            }
+
+            .app-icon {
+                width: 96px;
+                height: 96px;
+                border-radius: 22px;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
+
+            .screenshots img {
+                height: 400px;
+                border-radius: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="screenshots/icon.png" alt="Cem Verbos app icon" class="app-icon"
+         onerror="this.style.display='none'">
+    <h1>Cem Verbos</h1>
+    <p>Learn Portuguese Conjugations</p>
+    <div class="badge-row">
+        <a href="https://apps.apple.com/app/cem-verbos/id6746791396">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                 alt="Download on the App Store">
+        </a>
+    </div>
+</header>
+
+<section>
+    <h2 class="section-title">Why Cem Verbos?</h2>
+    <div class="features">
+        <div class="feature">
+            <div class="icon">🧠</div>
+            <h3>Spaced Repetition</h3>
+            <p>SM-2 algorithm schedules reviews at the optimal time, so you remember more with less effort.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🎯</div>
+            <h3>Drill Mode</h3>
+            <p>Unlimited practice on any tense without affecting your progress. Perfect for focused study.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">📈</div>
+            <h3>Progressive Unlocking</h3>
+            <p>Master one tense before moving to the next. Six tenses from Presente to Imperativo.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">☁️</div>
+            <h3>iCloud Sync</h3>
+            <p>Your progress syncs across all your devices automatically via iCloud.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">📱</div>
+            <h3>Widgets</h3>
+            <p>Home screen widgets show cards remaining, streaks, and a 7-day activity graph.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🇧🇷</div>
+            <h3>100 Verbs, 3,600 Cards</h3>
+            <p>The most common Brazilian Portuguese verbs across 6 tenses and 6 persons.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 class="section-title">Screenshots</h2>
+    <div class="screenshots">
+        <img src="screenshots/iPhone.png" alt="Quiz screen">
+        <img src="screenshots/Drill.png" alt="Drill mode">
+        <img src="screenshots/Progression.png" alt="Tense progression">
+        <img src="screenshots/Settings.png" alt="Settings">
+    </div>
+</section>
+
+<div class="about">
+    <p>Cem Verbos is designed for anyone learning Brazilian Portuguese. Whether you are a beginner or brushing up, the spaced repetition system adapts to your pace and helps you retain conjugations long term.</p>
+    <p>Available in English and French. Quiz content in Portuguese.</p>
+</div>
+
+<footer>
+    <div class="links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="mailto:cizeon@cizeon.xyz">Contact</a>
+    </div>
+    <p>&copy; 2026 Cizeon. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
